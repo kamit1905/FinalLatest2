@@ -1,6 +1,7 @@
 package com.app.sunbeam.JavaScriptHelper;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.app.sunbeam.Driver.DriverManager;
 

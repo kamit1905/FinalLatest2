@@ -8,21 +8,14 @@
           <include name="afterMethod"/>
           <include name="setUp"/>
           <include name="afterSuite"/>
+          <include name="sample2"/>
           <include name="beforeSuite"/>
           <include name="LoginTest"/>
+          <include name="sample"/>
           <include name="beforeMethod"/>
+          <include name="sample1"/>
         </methods>
       </class> <!-- com.app.sunbeam.tests.Test1 -->
-      <class name="com.app.sunbeam.tests.Test2">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="beforeMethod"/>
-          <include name="getup1Test"/>
-        </methods>
-      </class> <!-- com.app.sunbeam.tests.Test2 -->
     </classes>
   </test> <!-- Testingsites(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

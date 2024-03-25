@@ -2,12 +2,13 @@ package com.app.sunbeam.Configurations;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyReader implements ConfigReader {
 	public static FileInputStream file;
 	public static Properties prop;
-	public PropertyReader() {
+	public PropertyReader(){
 		try {
 			String filePath = System.getProperty("user.dir")+"\\src\\main\\java\\com\\app\\sunbeam\\Resources\\config.properties";
 			file = new FileInputStream(new File(filePath));

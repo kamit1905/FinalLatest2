@@ -17,6 +17,10 @@ public class ExtentManagerLogger {
 	public static void pass(String message) {
 		ExtentManager.getExtentTest().pass(message);
 	}
+	
+	public static void skip(String message) {
+		ExtentManager.getExtentTest().skip(message +" is Skipped");
+	}
 
 	//fail(testCaseName,MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenShotUtils.getScreenshot()).build());
 }

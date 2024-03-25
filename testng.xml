@@ -5,22 +5,16 @@
   <test name="Testingsites">
     	<classes>
     		<class name="com.app.sunbeam.tests.Test1" />
-    		<class name="com.app.sunbeam.tests.Test2" />
-    		<class name="com.app.sunbeam.tests.Test3" />
+<!--     		<class name="com.app.sunbeam.tests.Test2" />
+    		<class name="com.app.sunbeam.tests.Test3" /> -->
     	</classes>
     	
     </test>
     
-<!--    <test name="Testing site2">
+   <test name="Testing site2">
     	<classes>
     		<class name="com.app.sunbeam.tests.Test2" />
     	</classes>
     </test>
-
-	<test name="Testing site3">
-    	<classes>
-    		<class name="com.app.sunbeam.tests.Test3" />
-    	</classes>
-    </test>   -->
 
 </suite>

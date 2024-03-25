@@ -24,24 +24,24 @@ public class WaitHelper {
 		return wait;
 	}
 	
-	public void WaitForElementVisible(WebElement element,long timeOut) {
+	public WebElement WaitForElementVisible(WebElement element,long timeOut) {
 		WebDriverWait wait = getWait(timeOut);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public void WaitForElementInvisible(WebElement element,long timeOut) {
+	public Boolean WaitForElementInvisible(WebElement element,long timeOut) {
 		WebDriverWait wait = getWait(timeOut);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		return wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
-	public void WaitForElementToBeClickable(WebElement element,long timeOut) {
+	public WebElement WaitForElementToBeClickable(WebElement element,long timeOut) {
 		WebDriverWait wait = getWait(timeOut);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public void WaitForElementToBeSelected(WebElement element,long timeOut) {
+	public boolean WaitForElementToBeSelected(WebElement element,long timeOut) {
 		WebDriverWait wait = getWait(timeOut);
-		wait.until(ExpectedConditions.elementToBeSelected(element));
+		return wait.until(ExpectedConditions.elementToBeSelected(element));
 	}
 	
 	public void WaitforAlert(long timeOut) {
@@ -49,10 +49,10 @@ public class WaitHelper {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 	
-	public Wait<WebDriver> FluentWait(long timeOut,long poolingEvery) {
+	public Wait<WebDriver> FluentWait(long timeOut,long pollingEvery) {
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(DriverManager.getDriver())
 				.withTimeout(Duration.ofSeconds(timeOut))
-				.pollingEvery(Duration.ofSeconds(poolingEvery))
+				.pollingEvery(Duration.ofSeconds(pollingEvery))
 				.ignoring(NoSuchElementException.class);
 		 return fluentWait;
 	}
