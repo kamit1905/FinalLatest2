@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.app.sunbeam.Pages.LoginPage;
 
 public class Test1 extends BaseTest {
+	//adding one from user1
 	
 	@Test(enabled = true ,priority = 1)
 	public void sample() throws InterruptedException {
