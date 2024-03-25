@@ -1,4 +1,5 @@
 package com.app.sunbeam.tests;
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 import org.testng.ITestResult;
@@ -16,6 +17,7 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void beforeSuite() {
+		//Driver.initDriver();
 		ExtentReport.initReport();
 	}
 	
@@ -38,6 +40,10 @@ public class BaseTest {
 	public void afterMethod(ITestResult result) {
 		if(result.getStatus()==ITestResult.FAILURE) {
 			ExtentManagerLogger.fail(result.getName(),result.getThrowable());
+		}else if(result.getStatus()==ITestResult.SUCCESS) {
+			ExtentManagerLogger.pass(result.getName());
+		}else {
+			ExtentManagerLogger.skip(result.getName());
 		}
 	}
 	
