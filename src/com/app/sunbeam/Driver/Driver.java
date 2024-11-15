@@ -20,6 +20,8 @@ public class Driver {
 		DriverManager.setDriver(driver);
 		DriverManager.getDriver().manage().window().maximize();
 		DriverManager.getDriver().get(url);
+		
+		//Add Url here
 	}
 
 }
