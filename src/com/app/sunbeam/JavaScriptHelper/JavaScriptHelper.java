@@ -78,5 +78,6 @@ public class JavaScriptHelper {
 	public void OpenNewTabInBrowser() {
 		ExecuteScript("Window.open()");
 	}
-
+	
+	//Adding first commit
 }
