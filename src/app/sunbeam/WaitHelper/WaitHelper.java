@@ -56,4 +56,8 @@ public class WaitHelper {
 				.ignoring(NoSuchElementException.class);
 		 return fluentWait;
 	}
+	
+	public void RevertMethod() {
+		//Adding revert methos here
+	}
 }
