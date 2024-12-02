@@ -61,5 +61,6 @@ public class LoginPage {
 //		ExtentManagerLogger.info("Clicking on sign in button ");
 //		DriverManager.getDriver().findElement(loginBtn).click();
 //	}
-
+	
+	//Adding commit 2
 }
