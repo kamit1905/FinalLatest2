@@ -47,10 +47,10 @@ public class BaseTest {
 		}
 	}
 	
-	@AfterSuite
-	public void qui() {
-		DriverManager.getDriver().quit();
-	}
+//	@AfterSuite
+//	public void qui() {
+//		DriverManager.getDriver().quit();
+//	}
 	
 	//check rebase commit1
 }
